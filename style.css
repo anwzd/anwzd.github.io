@@ -97,11 +97,6 @@ a:active,.navbar-toggler:active {
     border: 1px solid rgb(70, 67, 67);
 }
 
-/* main below */
-.main {
-    margin: 0 25%;
-}
-
 .profile {
     display: flex;
     align-items: center;
@@ -215,11 +210,18 @@ a:hover {
 a span:hover, a div:hover {
     opacity: 1;
 } 
-
-
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 @media (min-width:1200px)
 {
+    .main {
+        margin: 0 25%;
+    }
     .header-text .resume {
         font-size: 3em;
     }
@@ -229,6 +231,9 @@ a span:hover, a div:hover {
 }
 @media (max-width:1200px)
 {
+    .main {
+        margin: 0 15%;
+    }
     .profile {
         flex-direction: column;
         justify-content: center;
@@ -280,6 +285,9 @@ a span:hover, a div:hover {
 {
     body {
         text-align: center;
+    }
+    .main {
+        margin: 0 5%;
     }
     h1 {
         font-size: 2.5em;
