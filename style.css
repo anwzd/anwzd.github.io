@@ -205,6 +205,18 @@ a:active,.navbar-toggler:active {
     url(./images/bg_lg.png) center no-repeat fixed;
     background-size: cover;
 }
+a span, a div {
+    color: white;
+    opacity: 0.6;
+}
+a:hover {
+    text-decoration: none;
+}
+a span:hover, a div:hover {
+    opacity: 1;
+} 
+
+
 
 @media (min-width:1200px)
 {
