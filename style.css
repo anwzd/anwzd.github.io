@@ -262,8 +262,14 @@ a span:hover, a div:hover {
 @media (max-width:800px)
 {
     .header {
-        background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
-        url(./images/bg_sm_gif.gif) center no-repeat fixed;
+        /* background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
+        url(./images/bg_sm.png) center no-repeat fixed;
+        background-size: cover; */
+
+        background:url("./images/bg_sm.png") no-repeat fixed center linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%);
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size:cover;
         background-size: cover;
     }
 }
