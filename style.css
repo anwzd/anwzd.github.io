@@ -266,11 +266,12 @@ a span:hover, a div:hover {
         url(./images/bg_sm.png) center no-repeat fixed;
         background-size: cover; */
 
-        background:url("./images/bg_sm_j.jpg") no-repeat fixed center linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%);
+        background:url("./images/bg_sm_j.jpg") no-repeat scroll center linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%);
         -o-background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size:cover;
         background-size: cover;
+        z-index: 1;
     }
 }
 @media(min-width:500px)
