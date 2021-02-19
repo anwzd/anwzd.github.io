@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat&display=swap');
 
 /* global below */
 html {
@@ -8,21 +9,19 @@ body {
     margin: 0;
     padding: 0;
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Open Sans", sans-serif;
+}
 p {
+    font-family: 'Montserrat', sans-serif;
     color: #434242;
+}
+span {
+    font-family: 'Montserrat', sans-serif;
 }
 .container-fluid {
     padding: 0;
 }
-
-h1 {
-    font-size: 63px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-    padding-bottom: 20px;
-    line-height: 1.1;
-}
-
 h2 {
     text-align: center;
     font-size: 54px;
@@ -39,10 +38,10 @@ h3 {
 }
 h4 {
     font-weight: 700;
-margin-bottom: 10px;
-font-size: 18px;
-margin-top: 10px;
-color: #434242;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #434242;
 }
 hr {
     margin: 40px 0px;
@@ -59,7 +58,7 @@ hr {
 
 .resume {
     color: white;
-    font-weight: 200;
+    font-weight: 100;
 }
 .navbar {
     display: flex;
@@ -219,11 +218,17 @@ a span:hover, a div:hover {
 
 @media (min-width:1200px)
 {
+    .header-heading {
+        font-size: 4em;
+        font-weight: 700;
+        padding-bottom: 20px;
+        line-height: 1.1;
+    }
     .main {
         margin: 0 25%;
     }
     .header-text .resume {
-        font-size: 3em;
+        font-size: 2em;
     }
     .profile-image {
         margin-right: 15px;
@@ -231,6 +236,12 @@ a span:hover, a div:hover {
 }
 @media (max-width:1200px)
 {
+    .header-heading {
+        font-size: 3;
+    }
+    .header-text .resume {
+        font-size: 2em;
+    }
     .main {
         margin: 0 15%;
     }
@@ -259,7 +270,7 @@ a span:hover, a div:hover {
 @media(min-width:500px)
 {
     .resume {
-        font-size: 3em;
+        font-size: 2em;
     }
     .profile-image .image{
         width: 250px;
