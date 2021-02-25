@@ -194,6 +194,10 @@ a:active,.navbar-toggler:active {
     width: 70%;
     margin: 50px auto 25px;
 }
+.header {
+    background: url(./images/bg_lg.png) center no-repeat fixed;
+    background-size: cover;
+}
 a span, a div {
     color: white;
     opacity: 0.6;
@@ -213,25 +217,19 @@ a span:hover, a div:hover {
 
 @media (min-width:1200px)
 {
-    .header {
-        background-image: url(./images/bg_lg.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
     .header-heading {
+        color: #22A39F;
         font-size: 4em;
         font-weight: 700;
         padding-bottom: 20px;
         line-height: 1.1;
-        color: rgb(34, 163, 159);
     }
     .main {
         margin: 0 25%;
     }
     .header-text .resume {
+        color: #22A39F;
         font-size: 2em;
-        color: rgb(34, 163, 159);
     }
     .profile-image {
         margin-right: 15px;
@@ -239,16 +237,12 @@ a span:hover, a div:hover {
 }
 @media (max-width:1200px)
 {
-    .header {
-        background-image: url(./images/bg_lg.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
     .header-heading {
+        color: #22A39F;
         font-size: 3;
     }
     .header-text .resume {
+        color: #22A39F;
         font-size: 2em;
     }
     .main {
@@ -271,20 +265,14 @@ a span:hover, a div:hover {
 @media (max-width:800px)
 {
     .header {
-        background-image: url(./images/bg_sm.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
+        background: url(./images/bg_sm.png) center no-repeat fixed;
+        background-size: cover;
     }
 }
 @media(min-width:500px)
 {
-    .header-heading {
-        color: rgb(34, 163, 159);
-    }
     .resume {
         font-size: 2em;
-        color: rgb(34, 163, 159);
     }
     .profile-image .image{
         width: 250px;
@@ -317,11 +305,7 @@ a span:hover, a div:hover {
     h1 {
         font-size: 2.5em;
     }
-    .header-heading {
-        color: rgb(34, 163, 159);
-    }
     .resume {
-        color: rgb(34, 163, 159);
         font-size: 1.5em;
     }
     .hardskills-container,.languages-container {
