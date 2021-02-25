@@ -194,15 +194,6 @@ a:active,.navbar-toggler:active {
     width: 70%;
     margin: 50px auto 25px;
 }
-.header {
-    /* background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
-    url(./images/bg_lg.png) center no-repeat fixed; */
-    background-size: cover;
-    background-image: url(./images/bg_lg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
 a span, a div {
     color: white;
     opacity: 0.6;
@@ -222,6 +213,15 @@ a span:hover, a div:hover {
 
 @media (min-width:1200px)
 {
+    .header {
+        /* background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
+        url(./images/bg_lg.png) center no-repeat fixed; */
+        background-size: cover;
+        background-image: url(./images/bg_lg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
     .header-heading {
         font-size: 4em;
         font-weight: 700;
@@ -242,6 +242,13 @@ a span:hover, a div:hover {
 }
 @media (max-width:1200px)
 {
+    .header {
+        background-size: cover;
+        background-image: url(./images/bg_lg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
     .header-heading {
         font-size: 3;
     }
