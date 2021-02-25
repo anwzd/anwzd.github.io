@@ -265,7 +265,10 @@ a span:hover, a div:hover {
 @media (max-width:800px)
 {
     .header {
-        background: url(./images/bg_sm.png) center no-repeat fixed;
+        background-image: url(./images/bg_sm.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
     }
 }
