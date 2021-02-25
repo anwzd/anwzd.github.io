@@ -195,7 +195,8 @@ a:active,.navbar-toggler:active {
     margin: 50px auto 25px;
 }
 .header {
-    background: url(./images/bg_lg.png) center no-repeat fixed;
+    background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
+    url(./images/bg_lg.png) center no-repeat fixed;
     background-size: cover;
 }
 a span, a div {
@@ -218,7 +219,6 @@ a span:hover, a div:hover {
 @media (min-width:1200px)
 {
     .header-heading {
-        color: #22A39F;
         font-size: 4em;
         font-weight: 700;
         padding-bottom: 20px;
@@ -228,7 +228,6 @@ a span:hover, a div:hover {
         margin: 0 25%;
     }
     .header-text .resume {
-        color: #22A39F;
         font-size: 2em;
     }
     .profile-image {
@@ -238,11 +237,9 @@ a span:hover, a div:hover {
 @media (max-width:1200px)
 {
     .header-heading {
-        color: #22A39F;
         font-size: 3;
     }
     .header-text .resume {
-        color: #22A39F;
         font-size: 2em;
     }
     .main {
@@ -265,10 +262,8 @@ a span:hover, a div:hover {
 @media (max-width:800px)
 {
     .header {
-        background-image: url(./images/bg_sm.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
+        url(./images/bg_sm.png) center no-repeat fixed;
         background-size: cover;
     }
 }
