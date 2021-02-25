@@ -195,9 +195,13 @@ a:active,.navbar-toggler:active {
     margin: 50px auto 25px;
 }
 .header {
-    background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
-    url(./images/bg_lg.png) center no-repeat fixed;
+    /* background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
+    url(./images/bg_lg.png) center no-repeat fixed; */
     background-size: cover;
+    background-image: url(./images/bg_lg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 a span, a div {
     color: white;
@@ -223,12 +227,14 @@ a span:hover, a div:hover {
         font-weight: 700;
         padding-bottom: 20px;
         line-height: 1.1;
+        color: rgb(34, 163, 159);
     }
     .main {
         margin: 0 25%;
     }
     .header-text .resume {
         font-size: 2em;
+        color: rgb(34, 163, 159);
     }
     .profile-image {
         margin-right: 15px;
@@ -262,20 +268,22 @@ a span:hover, a div:hover {
 @media (max-width:800px)
 {
     .header {
-        background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%);
-        background-image: url(./images/bg_sm.png);
         /* background: linear-gradient(90deg, rgba(34, 163, 159, 0.7) 0%, rgba(34, 163, 159, 0.7) 100%),
         url(./images/bg_sm.png) center no-repeat fixed; */
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
+        background-image: url(./images/bg_sm.png);
         background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
     }
 }
 @media(min-width:500px)
 {
+    .header-heading {
+        color: rgb(34, 163, 159);
+    }
     .resume {
         font-size: 2em;
+        color: rgb(34, 163, 159);
     }
     .profile-image .image{
         width: 250px;
@@ -308,7 +316,11 @@ a span:hover, a div:hover {
     h1 {
         font-size: 2.5em;
     }
+    .header-heading {
+        color: rgb(34, 163, 159);
+    }
     .resume {
+        color: rgb(34, 163, 159);
         font-size: 1.5em;
     }
     .hardskills-container,.languages-container {
